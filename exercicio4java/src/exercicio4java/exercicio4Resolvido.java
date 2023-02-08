@@ -24,7 +24,7 @@ public class exercicio4Resolvido {
 		
 		dif = (n1 * n2)-(n3 * n4);
 		
-		System.out.println("A diferença do produto é "+dif);
+		System.out.println("O calculo da diferença do produto é igual a "+dif);
 	
 		
 		

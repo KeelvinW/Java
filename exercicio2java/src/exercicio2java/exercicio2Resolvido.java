@@ -30,6 +30,7 @@ public class exercicio2Resolvido {
 		nota4 = leia.nextFloat();
 		
 		media = (nota1+nota2+nota3+nota4)/4;
+			
 		
 		System.out.println(nome+", sua média de notas é igual a: "+media);
 
