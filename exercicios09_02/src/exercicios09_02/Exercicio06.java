@@ -42,35 +42,35 @@ public class Exercicio06 {
 			porcentagem = (salario/100)*7;
 			totsal = salario + porcentagem;
 			System.out.println("Colaborador: "+nome);
-			System.out.println("Cargo: Gerente ");
+			System.out.println("Cargo: Vendedor ");
 			System.out.println("Salario Reajustado: "+totsal);
 			break;
 		case 3:
 			porcentagem = (salario/100)*9;
 			totsal = salario + porcentagem;
 			System.out.println("Colaborador: "+nome);
-			System.out.println("Cargo: Gerente ");
+			System.out.println("Cargo: Supervisor ");
 			System.out.println("Salario Reajustado: "+totsal);
 			break;	
 		case 4:
 			porcentagem = (salario/100)*6;
 			totsal = salario + porcentagem;
 			System.out.println("Colaborador: "+nome);
-			System.out.println("Cargo: Gerente ");
+			System.out.println("Cargo: Motorista ");
 			System.out.println("Salario Reajustado: "+totsal);
 			break;
 		case 5:
 			porcentagem = (salario/100)*5;
 			totsal = salario + porcentagem;
 			System.out.println("Colaborador: "+nome);
-			System.out.println("Cargo: Gerente ");
+			System.out.println("Cargo: Estoquista ");
 			System.out.println("Salario Reajustado: "+totsal);
 			break;
 		case 6:
 			porcentagem = (salario/100)*8;
 			totsal = salario + porcentagem;
 			System.out.println("Colaborador: "+nome);
-			System.out.println("Cargo: Gerente ");
+			System.out.println("Cargo: Técnico de TI ");
 			System.out.println("Salario Reajustado: "+totsal);
 			break;
 	}

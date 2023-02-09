@@ -21,14 +21,20 @@ public class Exercicio04 {
 		animal03 = leia.nextLine();
 		
 		if(animal01.equals("Vertebrado"));{
-			if(animal02.equals("Vertebrado"));{
-				if(animal03.equals("Vertebrado"));{
+			if(animal01.equals("Vertebrado"));{
+				if(animal01.equals("Vertebrado"));{
 					
 				}
 			}
-		}else {
+		}
 		
 		
 	
 	
 }
+
+	}	
+		
+		
+		
+		
