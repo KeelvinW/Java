@@ -1,6 +1,6 @@
 package aula_04;
 
-import java.util.Arrays;
+
 import java.util.Scanner;
 
 public class Exercicio01 {
@@ -11,9 +11,9 @@ public class Exercicio01 {
 		int vetor [] = {2, 5, 1, 3, 4, 9, 7, 8, 10, 6};
 		int numero, posicao = 0;
 		boolean result = false;	
-		String continua = "s";
 		
-	while (continua.equals("S")) {
+		
+	
 		
 		System.out.println("Digite um numero que você deseja encontrar: ");
 		numero = leia.nextInt();
@@ -31,10 +31,8 @@ public class Exercicio01 {
 		else
 			System.out.println("O número "+ numero +" não foi encontrado!");
 		
-		System.out.println("Deseja continuar(S/N)? ");
-		leia.skip("\\R?");
-		continua = leia.nextLine().toUpperCase();
-	}
+		
+	
 		
 		
 		
@@ -44,6 +42,6 @@ public class Exercicio01 {
 
 		
 		leia.close();
-		
+		}	
 	}
-}
+
