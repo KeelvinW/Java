@@ -16,11 +16,11 @@ public class ExercicioEstruturaDados01 {
 		String resp;
 
 		do {
-			System.out.println("****************************************");
-			System.out.println("\n1- Adicionar Cliente na fila");
-			System.out.println("\n2- Listar de todos os Clientes");
-			System.out.println("\n3- Retirar Cliente da Fila");
-			System.out.println("\n0- Sair");
+			System.out.println("******************************************");
+			System.out.println("     \n1- Adicionar Cliente na fila       ");
+			System.out.println("     \n2- Listar de todos os Clientes     ");
+			System.out.println("     \n3- Retirar Cliente da Fila         ");
+			System.out.println("     \n0- Sair                            ");
 			System.out.println("\n****************************************");
 			System.out.println("Digite a opção desejada: ");
 			opcao = leia.nextInt();
@@ -35,16 +35,19 @@ public class ExercicioEstruturaDados01 {
 				break;
 				
 			case 2:
-				System.out.println("Lista de todos os Clientes");
+				System.out.println("Fila de todos os Clientes");
 				fila.forEach(System.out::println);
 				break;
 			
 			case 3:
-				
-				System.out.println("Retirar o primeiro Cliente da Fila");
-				System.out.println("O Cliente "+fila.poll()+ " foi retirado!");
+				if(fila.isEmpty())
+					System.out.println("A Fila de cliente esta vazia!");
+				else
+					System.out.println("Retirar o primeiro Cliente da Fila");
+					System.out.println("O Cliente "+fila.poll()+ " foi retirado!");
 				break;
-		
+			default:
+				System.out.println("Opção Invalida!");
 			
 			}
 
