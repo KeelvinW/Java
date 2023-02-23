@@ -1,6 +1,6 @@
 package atividade04;
 
-public class Farmacia {
+public abstract class Farmacia {
 	
 	private float preco;
 	private long id;
@@ -8,11 +8,11 @@ public class Farmacia {
 	private	String nomeComercial;
 	private	String fabricante;
 	private String foto;
+	private int tipo;
 	
 	
 	
-	
-	public Farmacia(float preco, long id, String nome, String nomeComercial, String fabricante, String foto) {
+	public Farmacia(float preco, long id, String nome, String nomeComercial, String fabricante, String foto, int tipo) {
 		super();
 		this.preco = preco;
 		this.id = id;
@@ -20,6 +20,7 @@ public class Farmacia {
 		this.nomeComercial = nomeComercial;
 		this.fabricante = fabricante;
 		this.foto = foto;
+		this.tipo = tipo;
 	}
 
 	
@@ -83,7 +84,27 @@ public class Farmacia {
 		this.foto = foto;
 	}
 	
+	public int getTipo() {
+		return tipo;
+	}
+
+
+
+	public void setTipo(int tipo) {
+		this.tipo = tipo;
+	}
+
+	
+
 	public void visualizar() {
+		
+		String tipo = "";
+		
+		switch(this.tipo) {
+		case 1 -> tipo = "Medicamento";
+		case 2 -> tipo = "Perfumaria";
+		
+		}
 		
 		System.out.println("\nPreço: " + this.preco);
 		System.out.println("Dados do produto");
@@ -92,6 +113,7 @@ public class Farmacia {
 		System.out.println("\nNome Comercial: " + this.nomeComercial);
 		System.out.println("\nFabricante: " + this.fabricante);
 		System.out.println("\nFoto: " + this.foto);
+		System.out.println("\nTipo: " + tipo);
 		
 		 
 	}

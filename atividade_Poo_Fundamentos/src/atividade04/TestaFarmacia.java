@@ -12,9 +12,10 @@ public class TestaFarmacia {
 		Scanner leia = new Scanner (System.in);
 		
 		long id;
-		String nome, nomeComercial, fabricante, foto, opcao;
+		String nome, nomeComercial, fabricante, foto, opcao, principioAtivo, fragancia;
 		float preco;
-		 
+		int tipo;
+		
 		
 		do {
 			System.out.println("\nId:  ");
@@ -36,9 +37,32 @@ public class TestaFarmacia {
 			System.out.println("\nPreço: ");
 			preco = leia.nextFloat();
 			
-			Farmacia f1 = new Farmacia (preco, id, nome, nomeComercial, fabricante, foto);
+			System.out.println("\nTipo: ");
+			tipo = leia.nextInt();
 			
-			medicamentos.add(f1);
+			//Farmacia f1 = new Farmacia (preco, id, nome, nomeComercial, fabricante, foto, tipo);
+			
+			switch(tipo) {
+				case 1 -> {
+					System.out.println("\nPrincipio ativo: ");
+					leia.skip("\\R?");
+					principioAtivo = leia.nextLine();
+					Medicamento m1 = new Medicamento (preco, id, nome, nomeComercial, fabricante, foto, tipo, principioAtivo);
+					
+					medicamentos.add(m1);
+				}
+				case 2 -> {
+					System.out.println("\nFragancia: ");
+					leia.skip("\\R?");
+					fragancia = leia.nextLine();
+					Perfumaria p1 = new Perfumaria (preco, id, nome, nomeComercial, fabricante, foto, tipo, fragancia);
+					
+					medicamentos.add(p1);
+				}
+			
+			}
+			
+			//medicamentos.add(f1);
 			
 			System.out.println("\nDeseja continuar?[S/N] ");
 			leia.skip("\\R?");

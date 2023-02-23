@@ -7,21 +7,21 @@ public class Cliente {
 	private String email;
 	private String endereco;
 	private String cpf;
-
+	private int tipo;
 	
 	
-	public Cliente() {
-		
-	}
+	
+	
 
 
-	public Cliente(String nome, String telefone, String email, String endereco, String cpf) {
+	public Cliente(String nome, String telefone, String email, String endereco, String cpf, int tipo) {
 		
 		this.nome = nome;
 		this.telefone = telefone;
 		this.email = email;
 		this.endereco = endereco;
 		this.cpf = cpf;
+		this.tipo = tipo;
 	}
 
 
@@ -74,6 +74,18 @@ public class Cliente {
 		this.cpf = cpf;
 	}
 	
+	
+	
+	public int getTipo() {
+		return tipo;
+	}
+
+
+	public void setTipo(int tipo) {
+		this.tipo = tipo;
+	}
+
+
 	public void visualizar () {
 		
 		System.out.println("Nome do Cliente: " + nome);
